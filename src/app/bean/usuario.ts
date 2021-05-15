@@ -6,8 +6,10 @@ export class Persona {
   numeroDocumento: string;
   fechaNacimiento: Date;
   correo: string;
+  nomEmpresa:string;
   pass:string;
   fechaCreacion: Date;
+  
   constructor() {
     this.seqPersona = null;
     this.nomNombreCompleto = null
@@ -17,5 +19,6 @@ export class Persona {
     this.pass = null;
     this.fechaCreacion = new Date();
     this.tipoDocumento = new TipoDocumento();
+    this.nomEmpresa = null;
   }
 }

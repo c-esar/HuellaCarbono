@@ -22,6 +22,10 @@
         <ion-input type="text" [(ngModel)]="usuario.nomPrimerNombre" name="nombre" placeholder="Nombre completo" required="true"></ion-input>
       </ion-item>
       <ion-item>
+        <ion-label position="floating">Nombre empresa:<span class="text-danger">*</span> </ion-label>
+        <ion-input type="text" [(ngModel)]="usuario.nomEmpresa" name="nombre" placeholder="Nombre empresa" required="true"></ion-input>
+      </ion-item>
+      <ion-item>
         <ion-label position="floating"> Correo electrónico<span class="text-danger">*</span> </ion-label>
         <ion-input type="text" [(ngModel)]="usuario.correo" name="email" required="true"></ion-input>
       </ion-item>
