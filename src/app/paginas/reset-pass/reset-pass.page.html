@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Recuperar contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form class="ion-padding-top" autocomplete="off" (submit)="recuperarContrasena()">
+    <div class="ion-text-center">
+      <small>Escribe tu correo para enviarte las instrucciones para recuperar tu contraseña </small>
+    </div>
+    <ion-item>
+      <ion-input placeholder="Ingrese su correo electrónico" type="text" [(ngModel)]="email" name="email">
+      </ion-input>
+    </ion-item>
+    <ion-button type="submit" class="ion-margin-top" expand="block">Enviar</ion-button>  
+  </form>
+
+</ion-content>
