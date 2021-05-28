@@ -7,12 +7,13 @@ export const environment = {
 };
 
 export const firebaseconfigs = {
-  apiKey: "AIzaSyDZ-iWXZLVqkov4-cyDuImKIfN68RisJck",
-  authDomain: "mbcalculadoratest.firebaseapp.com",
-  projectId: "mbcalculadoratest",
-  storageBucket: "mbcalculadoratest.appspot.com",
-  messagingSenderId: "100019678303",
-  appId: "1:100019678303:web:d042f3c14f23381a6effea"
+apiKey: "AIzaSyBWjHU1KPUNeeFc-49sm09NRUmW2DQmruE",
+  authDomain: "huelladecarbono-975f7.firebaseapp.com",
+  projectId: "huelladecarbono-975f7",
+  storageBucket: "huelladecarbono-975f7.appspot.com",
+  messagingSenderId: "132122033263",
+  appId: "1:132122033263:web:ff4874420c9524384c219a",
+  measurementId: "G-MSJNY14W75"
 };
 /*
  * For easier debugging in development mode, you can import the following file
