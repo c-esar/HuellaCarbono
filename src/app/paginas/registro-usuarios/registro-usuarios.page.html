@@ -11,19 +11,27 @@
     <form autocomplete="off" (submit)="registroUsuario()">
       <ion-item>
         <ion-label position="floating">Nombre completo:<span class="text-danger">*</span> </ion-label>
-        <ion-input type="text" [(ngModel)]="usuario.nomPrimerNombre" name="nombre" placeholder="Nombre completo" required="true"></ion-input>
+        <ion-input type="text" [(ngModel)]="usuario.nomNombreCompleto" name="nombre" placeholder="Nombre completo" required="true"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Tipo documento:<span class="text-danger">*</span> </ion-label>
-        <ion-input type="text" [(ngModel)]="usuario.nomPrimerNombre" name="nombre" placeholder="Nombre completo" required="true"></ion-input>
+        <ion-select [(ngModel)]="usuario.tipoDocumento.seqTipoDocumento" name="tipoDocumento" required="true" interface="action-sheet">
+          <ion-select-option *ngFor="let tipoDocumento of tipoDocumentos" [value]="tipoDocumento.seqTipoDocumento">{{tipoDocumento.namDocumento}}</ion-select-option>
+        </ion-select>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Número documento:<span class="text-danger">*</span> </ion-label>
-        <ion-input type="text" [(ngModel)]="usuario.nomPrimerNombre" name="nombre" placeholder="Nombre completo" required="true"></ion-input>
+        <ion-input type="text" [(ngModel)]="usuario.numeroDocumento" name="documento" placeholder="Nombre completo" required="true"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Nombre empresa:<span class="text-danger">*</span> </ion-label>
-        <ion-input type="text" [(ngModel)]="usuario.nomEmpresa" name="nombre" placeholder="Nombre empresa" required="true"></ion-input>
+        <ion-input type="text" [(ngModel)]="usuario.nomEmpresa" name="empresa" placeholder="Nombre empresa" required="true"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Tipo sector:<span class="text-danger">*</span> </ion-label>
+        <ion-select [(ngModel)]="usuario.tipoSector.seqTipoSectorEmpresarial" name="tipoSector" required="true" interface="action-sheet">
+          <ion-select-option *ngFor="let tipoSectorEmpresarial of tipoSectorEmpresariales" [value]="tipoSectorEmpresarial.seqTipoSectorEmpresarial">{{tipoSectorEmpresarial.namSector}}</ion-select-option>
+        </ion-select>
       </ion-item>
       <ion-item>
         <ion-label position="floating"> Correo electrónico<span class="text-danger">*</span> </ion-label>

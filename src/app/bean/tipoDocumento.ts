@@ -1,5 +1,5 @@
 export class TipoDocumento {
-    seqTipoDocumento: number;
+    seqTipoDocumento: string;
     nomDocumento: string;
 
     constructor() {

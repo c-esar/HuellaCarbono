@@ -1,9 +1,9 @@
 export class TipoSectorEmpresarial {   
-    seqTipoSectorEmpresarial: number;
-    nomSectorEmpresarial: string;
+    seqTipoSectorEmpresarial: string;
+    namSector: string;
 
     constructor() {
         this.seqTipoSectorEmpresarial= null;
-        this.nomSectorEmpresarial = null;
+        this.namSector = null;
     }
 }

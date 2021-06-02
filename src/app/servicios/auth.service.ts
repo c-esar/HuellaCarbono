@@ -41,13 +41,4 @@ export class AuthService {
   recuperarContrasena(email:string){
     return this.AFauth.sendPasswordResetEmail(email);
   }
-
-  registroUsuarios(email:string, pass:string){
-   return new Promise((resolve, reject) => {
-    this.AFauth.createUserWithEmailAndPassword(email,pass).then( res =>{
-      resolve(res);
-    }).catch(err => reject(err))
-   });
-    
-  }
 }
